@@ -17,6 +17,9 @@ body{
     }
 
     &__responsive{
+        // position: relative;
+        // width: 254px;
+        // text-align: right;
 
         .icon{
 
@@ -24,6 +27,50 @@ body{
 
         .icon__close{
             display: none;
+        }
+
+        .nav__ul{
+            display: none;
+        }
+    }
+
+    &__responsive-active{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 254px;
+        text-align: right;
+        // background-color: $white;
+        backdrop-filter: blur(8.1px);
+
+        .icon__close{
+            // display: none;
+            margin-top: 33px;
+            margin-right: 28px;
+        }
+
+        .nav__ul{
+            display: flex;
+            flex-direction: column;
+            // gap: 16px;
+            align-items: flex-start;
+            margin-left: 32px;
+            margin-top: 54px;
+
+            .ul__li{
+                margin-bottom: 32px;
+
+                a{
+                    span{
+                        font-weight: 700;
+                        color: $white;
+                        margin-right: 12px;
+                    }
+
+                    color: $white;
+                }
+            }
         }
     }
 }

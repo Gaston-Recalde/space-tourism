@@ -46,6 +46,41 @@ body {
 .nav__responsive .icon__close {
   display: none;
 }
+.nav__responsive .nav__ul {
+  display: none;
+}
+.nav__responsive-active {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 254px;
+  text-align: right;
+  -webkit-backdrop-filter: blur(8.1px);
+          backdrop-filter: blur(8.1px);
+}
+.nav__responsive-active .icon__close {
+  margin-top: 33px;
+  margin-right: 28px;
+}
+.nav__responsive-active .nav__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 32px;
+  margin-top: 54px;
+}
+.nav__responsive-active .nav__ul .ul__li {
+  margin-bottom: 32px;
+}
+.nav__responsive-active .nav__ul .ul__li a {
+  color: hsl(0, 0%, 100%);
+}
+.nav__responsive-active .nav__ul .ul__li a span {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-right: 12px;
+}
 
 .main {
   text-align: center;
