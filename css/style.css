@@ -1,1 +1,90 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Bellefair", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 86%;
+}
+
+body {
+  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.nav__logo {
+  width: 40px;
+  height: 40px;
+}
+.nav__responsive .icon__close {
+  display: none;
+}
+
+.main {
+  text-align: center;
+  color: hsl(231, 77%, 90%);
+  margin-top: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.main__h5 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-weight: 300;
+}
+.main__h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 100px;
+}
+.main__p {
+  font-size: 15px;
+  color: hsl(231, 77%, 90%);
+  line-height: 25px;
+  margin-bottom: 81px;
+}
+.main__button {
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  color: hsl(230, 35%, 7%);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  text-transform: uppercase;
+  font-family: "bellefair";
+  margin-bottom: 48px;
+}/*# sourceMappingURL=style.css.map */

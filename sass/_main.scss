@@ -1,0 +1,77 @@
+body{
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    &__logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    &__responsive{
+
+        .icon{
+
+        }
+
+        .icon__close{
+            display: none;
+        }
+    }
+}
+
+.main{
+    text-align: center;
+    color: $sky;
+    margin-top: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    &__h5{
+        font-size: 16px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        font-weight: 300;
+    }
+
+    &__h1{
+        color: $white;
+        font-size: 80px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 100px;
+    }
+
+    &__p{
+        font-size: 15px;
+        color: $sky;
+        line-height: 25px;
+        margin-bottom: 81px;
+    }
+
+    &__button{
+        font-size: 20px;
+        letter-spacing: 1.25px;
+        color: $body-bg;
+        border-radius: 50%;
+        // padding: 50px;
+        width: 150px;
+        height: 150px;
+        background-color: $white;
+        border: none;
+        text-transform: uppercase;
+        font-family: 'bellefair';
+        // margin-top: 59px;
+        margin-bottom: 48px;
+    }
+}

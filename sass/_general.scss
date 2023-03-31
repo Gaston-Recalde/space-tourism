@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Bellefair', serif;
+}
+
+p{
+    font-family: 'Barlow', sans-serif;
+}
+
+h5{
+    font-family: 'Barlow Condensed', sans-serif; // Nav TEXT - subheading 2
+}
+
+.container{
+    margin: 0 auto;
+    width: 86%;
+}
