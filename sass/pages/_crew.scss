@@ -1,14 +1,14 @@
-.destination{
-    background-image: url('/assets/destination/background-destination-mobile.jpg');
+.crew{
+    background-image: url('/assets/crew/background-crew-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 100vh;
 }
 
-.main__destination{
+.main__crew{
 
-    h2{
+    .crew__title{
         color: $white;
         text-transform: uppercase;
         // margin-left: 18px;
@@ -24,66 +24,62 @@
         }
     }
 
-    .main__img{
-        width: 170px;
-        height: 170px;
+    .crew__img{
+        width: 327px;
+        height: 223px;
+        border-bottom: 1px solid $white;
         margin: 0 auto;
         margin-bottom: 26px;
 
         img{
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
     }
 
-    .destination__options{
+    .crew__options{
         margin-bottom: 20px;
 
         ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 26px;
-            text-transform: uppercase;
+            gap: 16px;
+            // text-transform: uppercase;
             font-size: 14px;
             letter-spacing: 2.36px;
+
+            li{
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: $sky;
+            }
         }
     }
 
-    .main__h1{
-        font-size: 56px;
+    .crew__h2{
+        font-family: 'Bellefair', serif;
+        font-size: 16px;
+        color: $white;
+        text-transform: uppercase;
     }
 
-    .destination__p{
+    .crew__h1{
+        font-family: 'Bellefair', serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    .crew__p{
         font-size: 15px;
         line-height: 25px;
         width: 327px;
         // max-width: 450px;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 32px;
+        margin-bottom: 104px;
     }
 
-    .rectangulo{
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 32px;
-        border-bottom: 1px solid $white;
-    }
-
-    .destination__info{
-        margin-bottom: 32px;
-        text-transform: uppercase;
-
-        p{
-            font-size: 14px;
-            letter-spacing: 2.36px;
-            margin-bottom: 12px;
-        }
-
-        span{
-            font-size: 28px;
-            color: $white;
-        }
-    }
 }

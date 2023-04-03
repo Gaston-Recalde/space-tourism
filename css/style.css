@@ -133,8 +133,8 @@ body {
 }
 
 .main__destination h2 {
+  color: hsl(0, 0%, 100%);
   text-transform: uppercase;
-  margin-left: 18px;
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
@@ -196,4 +196,74 @@ body {
 .main__destination .destination__info span {
   font-size: 28px;
   color: hsl(0, 0%, 100%);
+}
+
+.crew {
+  background-image: url("/assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main__crew .crew__title {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  margin-bottom: 32px;
+}
+.main__crew .crew__title span {
+  font-weight: 700;
+  color: gray;
+  margin-right: 18px;
+}
+.main__crew .crew__img {
+  width: 327px;
+  height: 223px;
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+.main__crew .crew__img img {
+  width: auto;
+  height: 100%;
+}
+.main__crew .crew__options {
+  margin-bottom: 20px;
+}
+.main__crew .crew__options ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
+.main__crew .crew__options ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: hsl(231, 77%, 90%);
+}
+.main__crew .crew__h2 {
+  font-family: "Bellefair", serif;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+.main__crew .crew__h1 {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+.main__crew .crew__p {
+  font-size: 15px;
+  line-height: 25px;
+  width: 327px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 104px;
 }/*# sourceMappingURL=style.css.map */
