@@ -20,7 +20,7 @@
 
       <ul class="nav__ul">
         <li class="ul__li"><a href="/index.html"><span>00</span> HOME</a></li>
-        <li class="ul__li"><a href="pages/destination/destination-moon.html"><span>01</span> DESTINATION</a></li>
+        <li class="ul__li"><a href="destination-moon.html"><span>01</span> DESTINATION</a></li>
         <li class="ul__li"><a href="#"><span>02</span> CREW</a></li>
         <li class="ul__li"><a href="#"><span>03</span> TECHNOLOGY</a></li>
       </ul>
@@ -28,27 +28,27 @@
     </div>
   </nav>
 
-  <main class="main main__destination">
+  <main class="main main__destination" id="main">
 
     <h2><span>01</span>Pick your destination</h2>
 
     <div class="main__img">
-      <img src="/assets/destination/image-moon.png" alt="Image Moon"> 
+      <img id="image" src="/assets/destination/image-moon.png" alt="Image Moon"> 
       <!-- <img src="/assets/destination/image-moon.webp" alt="Image Moon">  -->
     </div>
 
     <div class="destination__options">
       <ul>
-        <li>Moon</li>
-        <li>Mars</li>
-        <li>Europa</li>
-        <li>Titan</li>
+        <li id="destination1">Moon</li>
+        <li id="destination2">Mars</li>
+        <li id="destination3">Europa</li>
+        <li id="destination4">Titan</li>
       </ul>
     </div>
 
-    <h1 class="main__h1">MOON</h1>
+    <h1 class="main__h1" id="name">MOON</h1>
 
-    <p class="destination__p">
+    <p class="destination__p" id="description">
       See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
       regain perspective and come back refreshed. While you’re there, take in some history 
       by visiting the Luna 2 and Apollo 11 landing sites.
@@ -58,16 +58,17 @@
 
     <div class="destination__info">
       <p>Avg. distance</p>
-      <span>384,400 km</span>
+      <span id="distance">384,400 km</span>
     </div>
 
     <div class="destination__info">
       <p>Est. travel time</p>
-      <span>3 days</span>
+      <span id="travel">3 days</span>
     </div>
 
   </main>
 
   <script src="/js/app.js"></script>
+  <script src="js/destination.js"></script>
 </body>
 </html>
