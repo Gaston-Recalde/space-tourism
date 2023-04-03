@@ -1,0 +1,89 @@
+.technology{
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main__technology{
+
+    .technology__title{
+        color: $white;
+        text-transform: uppercase;
+        // margin-left: 18px;
+        font-size: 16px;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        margin-bottom: 32px;
+
+        span{
+            font-weight: 700;
+            color: gray;
+            margin-right: 18px;
+        }
+    }
+
+    .technology__img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 26px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .technology__options{
+        margin-bottom: 26px;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 26px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2.36px;
+
+            li{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .technology__data{
+        width: 327px;
+        margin: 0 auto;
+
+        .technology__h2{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 2.36px;
+            margin-bottom: 9px;
+        }
+
+        .technology__h1{
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: 'Bellefair', serif;
+        }
+
+        .technology__p{
+            font-size: 15px;
+            line-height: 25px;
+            margin-top: 16px;
+        }
+    }
+}
