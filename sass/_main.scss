@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    // height: 100vh;
+    height: 100vh;
 }
 
 .nav{
@@ -107,8 +107,10 @@ body{
         font-size: 15px;
         color: $sky;
         line-height: 25px;
+        margin: 0 auto;
         margin-bottom: 81px;
-        max-width: 444px;
+        width: 327px;
+        // max-width: 444px;
     }
 
     &__button{
