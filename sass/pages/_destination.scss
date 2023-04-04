@@ -16,6 +16,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         letter-spacing: 2.7px;
         margin-bottom: 32px;
+        font-weight: 400;
 
         span{
             font-weight: 700;
@@ -37,21 +38,32 @@
     }
 
     .destination__options{
-        margin-bottom: 20px;
+        margin-bottom: 12px;
 
         ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 26px;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 2.36px;
+
+            li{
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 2.36px;
+                color: $sky;
+                padding-bottom: 8px;
+
+                &:hover{
+                    color: $white;
+                    border-bottom: 3px solid $white;
+                }
+            }
         }
     }
 
     .main__h1{
         font-size: 56px;
+        margin-bottom: 0;
     }
 
     .destination__p{
@@ -62,13 +74,14 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 32px;
+        color: $sky;
     }
 
     .rectangulo{
         width: 90%;
         margin: 0 auto;
         margin-bottom: 32px;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $sky;
     }
 
     .destination__info{
@@ -79,6 +92,7 @@
             font-size: 14px;
             letter-spacing: 2.36px;
             margin-bottom: 12px;
+            color: $sky;
         }
 
         span{

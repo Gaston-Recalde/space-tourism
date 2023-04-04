@@ -16,6 +16,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         letter-spacing: 2.7px;
         margin-bottom: 32px;
+        font-weight: 400;
 
         span{
             font-weight: 700;
@@ -27,7 +28,7 @@
     .crew__img{
         width: 327px;
         height: 223px;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $sky;
         margin: 0 auto;
         margin-bottom: 26px;
 
@@ -38,7 +39,7 @@
     }
 
     .crew__options{
-        margin-bottom: 20px;
+        margin-bottom: 32px;
 
         ul{
             display: flex;
@@ -54,6 +55,14 @@
                 height: 10px;
                 border-radius: 50px;
                 background-color: $sky;
+
+                &:active{
+                    background-color: $white;
+                }
+
+                &:hover{
+                    background-color: $white;
+                }
             }
         }
     }
@@ -61,8 +70,11 @@
     .crew__h2{
         font-family: 'Bellefair', serif;
         font-size: 16px;
-        color: $white;
+        color: $white; // mas oscuro
         text-transform: uppercase;
+        font-weight: 400;
+        opacity: 49%;
+        margin-bottom: 8px;
     }
 
     .crew__h1{
@@ -70,16 +82,19 @@
         font-size: 24px;
         text-transform: uppercase;
         color: $white;
+        font-weight: 400;
+        margin-bottom: 16px;
     }
 
     .crew__p{
         font-size: 15px;
         line-height: 25px;
         width: 327px;
-        // max-width: 450px;
+        color: $sky;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 104px;
+        // max-width: 450px;
+        // margin-bottom: 104px;
     }
 
 }

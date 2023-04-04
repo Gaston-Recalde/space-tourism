@@ -16,6 +16,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         letter-spacing: 2.7px;
         margin-bottom: 32px;
+        font-weight: 400;
 
         span{
             font-weight: 700;
@@ -28,7 +29,7 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
-        margin-bottom: 26px;
+        margin-bottom: 34px;
 
         img{
             width: 100%;
@@ -44,20 +45,30 @@
             flex-direction: row;
             justify-content: center;
             gap: 26px;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 2.36px;
 
             li{
+                text-transform: uppercase;
+                // font-size: 14px;
+                letter-spacing: 2.36px;
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
                 background-color: transparent;
-                border: 1px solid $white;
+                border: 1px solid $sky;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-size: 16px;
+
+                &:hover{
+                    color: $body-bg;
+                    background-color: white;
+                }
+
+                &:active{
+                    color: $body-bg;
+                    background-color: white;
+                }
             }
         }
     }
@@ -72,11 +83,15 @@
             font-family: 'Barlow Condensed', sans-serif;
             letter-spacing: 2.36px;
             margin-bottom: 9px;
+            font-weight: 400;
+            color: $sky;
         }
 
         .technology__h1{
             text-transform: uppercase;
             font-size: 24px;
+            font-weight: 400;
+            color: $white;
             font-family: 'Bellefair', serif;
         }
 
@@ -84,6 +99,7 @@
             font-size: 15px;
             line-height: 25px;
             margin-top: 16px;
+            color: $sky;
         }
     }
 }
