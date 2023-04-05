@@ -11,7 +11,6 @@
     .technology__title{
         color: $white;
         text-transform: uppercase;
-        // margin-left: 18px;
         font-size: 16px;
         font-family: 'Barlow Condensed', sans-serif;
         letter-spacing: 2.7px;
@@ -48,7 +47,6 @@
 
             li{
                 text-transform: uppercase;
-                // font-size: 14px;
                 letter-spacing: 2.36px;
                 width: 40px;
                 height: 40px;
@@ -100,6 +98,70 @@
             line-height: 25px;
             margin-top: 16px;
             color: $sky;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .technology{
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+        height: 100%;
+    }
+    
+    .main__technology{
+        max-width: 100%;
+    
+        .technology__title{
+            text-align: left;
+            margin-left: 39px;
+            font-size: 20px;
+            letter-spacing: 3.38px;
+            margin-bottom: 60px;
+            margin-top: 40px;
+    
+            span{
+                margin-right: 19px;
+            }
+        }
+    
+        .technology__img{
+            margin-bottom: 56px;
+        }
+    
+        .technology__options{
+            margin-bottom: 44px;
+    
+            ul{
+                gap: 16px;
+    
+                li{
+                    letter-spacing: 1.5px;
+                    width: 60px;
+                    height: 60px;
+                    font-size: 24px;
+                }
+            }
+        }
+    
+        .technology__data{
+            width: 458px;
+    
+            .technology__h2{
+                font-size: 16px;
+                letter-spacing: 2.7px;
+                margin-bottom: 16px;
+            }
+    
+            .technology__h1{
+                font-size: 40px;
+            }
+    
+            .technology__p{
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 16px;
+                margin-bottom: 97px;
+            }
         }
     }
 }

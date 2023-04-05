@@ -580,4 +580,57 @@ body {
   line-height: 25px;
   margin-top: 16px;
   color: hsl(231, 76%, 90%);
+}
+
+@media screen and (min-width: 768px) {
+  .technology {
+    background-image: url("/assets/technology/background-technology-tablet.jpg");
+    height: 100%;
+  }
+  .main__technology {
+    max-width: 100%;
+  }
+  .main__technology .technology__title {
+    text-align: left;
+    margin-left: 39px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  .main__technology .technology__title span {
+    margin-right: 19px;
+  }
+  .main__technology .technology__img {
+    margin-bottom: 56px;
+  }
+  .main__technology .technology__options {
+    margin-bottom: 44px;
+  }
+  .main__technology .technology__options ul {
+    gap: 16px;
+  }
+  .main__technology .technology__options ul li {
+    letter-spacing: 1.5px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  .main__technology .technology__data {
+    width: 458px;
+  }
+  .main__technology .technology__data .technology__h2 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 16px;
+  }
+  .main__technology .technology__data .technology__h1 {
+    font-size: 40px;
+  }
+  .main__technology .technology__data .technology__p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 97px;
+  }
 }/*# sourceMappingURL=style.css.map */
