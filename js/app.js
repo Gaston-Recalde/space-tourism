@@ -13,3 +13,7 @@ navClose.addEventListener('click', () => {
     navClose.style.display = 'none';
     nav.classList.remove('nav__responsive-active');
 });
+
+if(window.innerWidth > 767){
+    nav.classList.remove('nav__responsive-active');
+};

@@ -19,44 +19,33 @@ body{
         height: 40px;
     }
 
-    &__responsive{
-        // position: relative;
-        // width: 254px;
-        // text-align: right;
-
-        .icon{
-
-        }
+    &__buttons{
 
         .icon__close{
             display: none;
-        }
-
-        .nav__ul{
-            display: none;
+            position: relative;
+            z-index: 1000;
         }
     }
 
+    &__responsive{
+        display: none;
+    }
+
     &__responsive-active{
+        display: inline-block;
+        padding-top: 30px;
         position: fixed;
         top: 0;
         bottom: 0;
         right: 0;
         width: 254px;
         text-align: right;
-        // background-color: $white;
         backdrop-filter: blur(8.1px);
-
-        .icon__close{
-            // display: none;
-            margin-top: 33px;
-            margin-right: 28px;
-        }
 
         .nav__ul{
             display: flex;
             flex-direction: column;
-            // gap: 16px;
             align-items: flex-start;
             margin-left: 32px;
             margin-top: 54px;
@@ -84,14 +73,13 @@ body{
     max-width: 450px;
     margin: 0 auto;
     margin-top: 48px;
-    // margin-top: 48px;
 
     &__h5{
         font-size: 16px;
         margin-bottom: 16px;
         text-transform: uppercase;
         letter-spacing: 2.7px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     &__h1{
@@ -110,7 +98,6 @@ body{
         margin: 0 auto;
         margin-bottom: 81px;
         width: 327px;
-        // max-width: 444px;
     }
 
     &__button{
@@ -118,14 +105,104 @@ body{
         letter-spacing: 1.25px;
         color: $body-bg;
         border-radius: 50%;
-        // padding: 50px;
         width: 150px;
         height: 150px;
         background-color: $white;
         border: none;
         text-transform: uppercase;
         font-family: 'bellefair';
-        // margin-top: 59px;
         margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-image: url('/assets/home/background-home-tablet.jpg');
+        height: auto;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        margin-left: 32px;
+        margin-right: 0;
+    
+        &__logo{
+            width: 48px;
+            height: 48px;
+        }
+    
+        &__buttons{
+            display: none;
+        }
+    
+        &__responsive{
+            display: inline-block;
+            padding-top: 0;
+            position: inherit;
+            text-align: inherit;
+            background-color: #6a6a6a1f;
+            backdrop-filter: inherit;
+            width: 65%;
+            max-width: 830px;
+    
+            .nav__ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 0;
+                margin-top: 0;
+                padding: 39px 46px;
+                
+                .ul__li{
+                    margin-bottom: 0;
+    
+                    a{
+                        font-size: 14px;
+                        letter-spacing: 2.36px;
+
+                        span{
+                            display: none;
+                        }
+    
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .main{
+        margin-top: 106px;
+    
+        &__h5{
+            font-size: 20px;
+            margin-bottom: 24px;
+            letter-spacing: 3.38px;
+        }
+    
+        &__h1{
+            font-size: 150px;
+            margin-bottom: 24px;
+            line-height: 150px;
+        }
+    
+        &__p{
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 156px;
+            width: 444px;
+        }
+    
+        &__button{
+            font-size: 32px;
+            letter-spacing: 2px;
+            width: 242px;
+            height: 242px;
+            margin-bottom: 90px;
+        }
     }
 }

@@ -38,13 +38,17 @@ body {
   width: 40px;
   height: 40px;
 }
-.nav__responsive .icon__close {
+.nav__buttons .icon__close {
   display: none;
+  position: relative;
+  z-index: 1000;
 }
-.nav__responsive .nav__ul {
+.nav__responsive {
   display: none;
 }
 .nav__responsive-active {
+  display: inline-block;
+  padding-top: 30px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -53,10 +57,6 @@ body {
   text-align: right;
   -webkit-backdrop-filter: blur(8.1px);
           backdrop-filter: blur(8.1px);
-}
-.nav__responsive-active .icon__close {
-  margin-top: 33px;
-  margin-right: 28px;
 }
 .nav__responsive-active .nav__ul {
   display: flex;
@@ -79,7 +79,7 @@ body {
 
 .main {
   text-align: center;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
   max-width: 450px;
   margin: 0 auto;
   margin-top: 48px;
@@ -89,7 +89,7 @@ body {
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 2.7px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .main__h1 {
   color: hsl(0, 0%, 100%);
@@ -101,7 +101,7 @@ body {
 }
 .main__p {
   font-size: 15px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
   line-height: 25px;
   margin: 0 auto;
   margin-bottom: 81px;
@@ -121,6 +121,84 @@ body {
   margin-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("/assets/home/background-home-tablet.jpg");
+    height: auto;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+  .nav__logo {
+    width: 48px;
+    height: 48px;
+  }
+  .nav__buttons {
+    display: none;
+  }
+  .nav__responsive {
+    display: inline-block;
+    padding-top: 0;
+    position: inherit;
+    text-align: inherit;
+    background-color: rgba(106, 106, 106, 0.1215686275);
+    -webkit-backdrop-filter: inherit;
+            backdrop-filter: inherit;
+    width: 65%;
+    max-width: 830px;
+  }
+  .nav__responsive .nav__ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 39px 46px;
+  }
+  .nav__responsive .nav__ul .ul__li {
+    margin-bottom: 0;
+  }
+  .nav__responsive .nav__ul .ul__li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: hsl(0, 0%, 100%);
+  }
+  .nav__responsive .nav__ul .ul__li a span {
+    display: none;
+  }
+  .main {
+    margin-top: 106px;
+  }
+  .main__h5 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 3.38px;
+  }
+  .main__h1 {
+    font-size: 150px;
+    margin-bottom: 24px;
+    line-height: 150px;
+  }
+  .main__p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 156px;
+    width: 444px;
+  }
+  .main__button {
+    font-size: 32px;
+    letter-spacing: 2px;
+    width: 242px;
+    height: 242px;
+    margin-bottom: 90px;
+  }
+}
 .destination {
   background-image: url("/assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
@@ -166,7 +244,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2.36px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
   padding-bottom: 8px;
 }
 .main__destination .destination__options ul li:hover {
@@ -184,13 +262,13 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 32px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
 }
 .main__destination .rectangulo {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 32px;
-  border-bottom: 1px solid hsl(231, 77%, 90%);
+  border-bottom: 1px solid hsl(231, 76%, 90%);
 }
 .main__destination .destination__info {
   margin-bottom: 32px;
@@ -200,7 +278,7 @@ body {
   font-size: 14px;
   letter-spacing: 2.36px;
   margin-bottom: 12px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
 }
 .main__destination .destination__info span {
   font-size: 28px;
@@ -232,7 +310,7 @@ body {
 .main__crew .crew__img {
   width: 327px;
   height: 223px;
-  border-bottom: 1px solid hsl(231, 77%, 90%);
+  border-bottom: 1px solid hsl(231, 76%, 90%);
   margin: 0 auto;
   margin-bottom: 26px;
 }
@@ -255,7 +333,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  background-color: hsl(231, 77%, 90%);
+  background-color: hsl(231, 76%, 90%);
 }
 .main__crew .crew__options ul li:active {
   background-color: hsl(0, 0%, 100%);
@@ -284,7 +362,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   width: 327px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
   text-align: center;
   margin: 0 auto;
 }
@@ -337,7 +415,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid hsl(231, 77%, 90%);
+  border: 1px solid hsl(231, 76%, 90%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +440,7 @@ body {
   letter-spacing: 2.36px;
   margin-bottom: 9px;
   font-weight: 400;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
 }
 .main__technology .technology__data .technology__h1 {
   text-transform: uppercase;
@@ -375,5 +453,5 @@ body {
   font-size: 15px;
   line-height: 25px;
   margin-top: 16px;
-  color: hsl(231, 77%, 90%);
+  color: hsl(231, 76%, 90%);
 }/*# sourceMappingURL=style.css.map */
