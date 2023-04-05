@@ -207,3 +207,83 @@ body{
         }
     }
 }
+
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url('/assets/home/background-home-desktop.jpg');
+    }
+    
+    .nav{
+        margin-left: 55px;
+        margin-top: 40px;
+    
+        &__responsive{
+    
+            .nav__ul{
+                padding: 39px 0;
+                width: 542px;
+                margin: 0 auto;
+                gap: 48px;
+                
+                .ul__li{
+    
+                    a{
+                        font-family: 'Barlow Condensed', sans-serif;
+                        font-size: 16px;
+                        letter-spacing: 2.7px;
+                        display: flex;
+                        gap: 11px;
+
+                        span{
+                            display: inline-block;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    .main{
+        max-width: 100%;
+        margin-top: 251px;
+        text-align: left;
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas: 
+        "h5  ."
+        "h1  button"
+        "p  button";
+    
+        &__h5{
+            font-size: 28px;
+            letter-spacing: 4.72px;
+            grid-area: h5;
+            margin-left: 165px;
+        }
+    
+        &__h1{
+            font-size: 150px;
+            line-height: 172px;
+            grid-area: h1;
+            margin-left: 165px;
+        }
+    
+        &__p{
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 131px;
+            margin-left: 165px;
+            grid-area: p;
+        }
+    
+        &__button{
+            width: 274px;
+            height: 274px;
+            margin-bottom: 131px;
+            margin-right: 165px;
+            margin-top: 50px;
+            grid-area: button;
+        }
+    }
+}
