@@ -11,7 +11,6 @@
     h2{
         color: $white;
         text-transform: uppercase;
-        // margin-left: 18px;
         font-size: 16px;
         font-family: 'Barlow Condensed', sans-serif;
         letter-spacing: 2.7px;
@@ -70,7 +69,6 @@
         font-size: 15px;
         line-height: 25px;
         width: 327px;
-        // max-width: 450px;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 32px;
@@ -98,6 +96,88 @@
         span{
             font-size: 28px;
             color: $white;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .destination{
+        background-image: url('/assets/destination/background-destination-tablet.jpg');
+        height: 100%;
+    }
+    
+    .main__destination{
+        max-width: 100%;
+        margin-top: 0;
+    
+        h2{
+            text-align: left;
+            margin-left: 39px;
+            margin-top: 40px;
+            font-size: 20px;
+            letter-spacing: 3.38px;
+            margin-bottom: 60px;
+    
+            span{
+                margin-right: 19px;
+            }
+        }
+    
+        .main__img{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 63px;
+        }
+    
+        .destination__options{
+            margin-bottom: 32px;
+    
+            ul{
+                gap: 35px;
+    
+                li{
+                    font-size: 16px;
+                    letter-spacing: 2.7px;
+                    font-family: 'Barlow Condensed', sans-serif;
+                }
+            }
+        }
+    
+        .main__h1{
+            font-size: 80px;
+            line-height: 91px;
+            margin-bottom: 8px;
+        }
+    
+        .destination__p{
+            font-size: 16px;
+            line-height: 28px;
+            width: 573px;
+            margin-bottom: 49px;
+        }
+    
+        .rectangulo{
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            border-bottom: 1px solid $sky;
+        }
+    
+        .destination__data{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 573px;
+            margin: 0 auto;
+
+            .destination__info{
+                margin-bottom: 62px;
+                margin-top: 29px;
+        
+                span{
+                    line-height: 32px;
+                }
+            }
         }
     }
 }

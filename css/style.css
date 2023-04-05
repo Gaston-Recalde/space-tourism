@@ -67,6 +67,7 @@ body {
 }
 .nav__responsive-active .nav__ul .ul__li {
   margin-bottom: 32px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .nav__responsive-active .nav__ul .ul__li a {
   color: hsl(0, 0%, 100%);
@@ -285,6 +286,74 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .destination {
+    background-image: url("/assets/destination/background-destination-tablet.jpg");
+    height: 100%;
+  }
+  .main__destination {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .main__destination h2 {
+    text-align: left;
+    margin-left: 39px;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    margin-bottom: 60px;
+  }
+  .main__destination h2 span {
+    margin-right: 19px;
+  }
+  .main__destination .main__img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 63px;
+  }
+  .main__destination .destination__options {
+    margin-bottom: 32px;
+  }
+  .main__destination .destination__options ul {
+    gap: 35px;
+  }
+  .main__destination .destination__options ul li {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .main__destination .main__h1 {
+    font-size: 80px;
+    line-height: 91px;
+    margin-bottom: 8px;
+  }
+  .main__destination .destination__p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 573px;
+    margin-bottom: 49px;
+  }
+  .main__destination .rectangulo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-bottom: 1px solid hsl(231, 76%, 90%);
+  }
+  .main__destination .destination__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 573px;
+    margin: 0 auto;
+  }
+  .main__destination .destination__data .destination__info {
+    margin-bottom: 62px;
+    margin-top: 29px;
+  }
+  .main__destination .destination__data .destination__info span {
+    line-height: 32px;
+  }
+}
 .crew {
   background-image: url("/assets/crew/background-crew-mobile.jpg");
   background-repeat: no-repeat;
