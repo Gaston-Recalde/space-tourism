@@ -296,6 +296,8 @@ body {
 .main__crew .crew__title {
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
+  text-align: center;
+  margin-left: 0;
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
@@ -367,6 +369,61 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .crew {
+    background-image: url("/assets/crew/background-crew-tablet.jpg");
+    height: 100%;
+  }
+  .main__crew {
+    margin-top: 0;
+    max-width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-areas: "number" "role" "name" "description" "options" "imagen";
+  }
+  .main__crew .crew__title {
+    text-align: left;
+    margin-left: 39px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    grid-area: number;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+  .main__crew .crew__title span {
+    margin-right: 16px;
+  }
+  .main__crew .crew__img {
+    width: 457px;
+    height: 572px;
+    border-bottom: none;
+    margin-bottom: 0;
+    grid-area: imagen;
+  }
+  .main__crew .crew__img img {
+    width: auto;
+    height: 100%;
+  }
+  .main__crew .crew__options {
+    grid-area: options;
+    margin-bottom: 40px;
+  }
+  .main__crew .crew__h2 {
+    grid-area: role;
+    font-size: 24px;
+  }
+  .main__crew .crew__h1 {
+    grid-area: name;
+    font-size: 40px;
+  }
+  .main__crew .crew__p {
+    grid-area: description;
+    width: 458px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+}
 .technology {
   background-image: url("/assets/technology/background-technology-mobile.jpg");
   background-repeat: no-repeat;
