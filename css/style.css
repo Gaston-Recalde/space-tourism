@@ -628,6 +628,68 @@ body {
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .crew {
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+  }
+  .main__crew {
+    margin-top: 62px;
+    max-width: 100%;
+    margin-left: 166px;
+    margin-right: 137px;
+    display: grid;
+    grid-template-areas: "title image" "role image" "name image" "description image" "options image";
+  }
+  .main__crew .crew__title {
+    grid-area: title;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 14px;
+    margin-bottom: 154px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  }
+  .main__crew .crew__title span {
+    margin-right: 24px;
+  }
+  .main__crew .crew__img {
+    grid-area: image;
+    width: 568px;
+    height: 712px;
+  }
+  .main__crew .crew__options {
+    grid-area: options;
+    margin-bottom: 94px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main__crew .crew__options ul {
+    gap: 24px;
+  }
+  .main__crew .crew__options ul li {
+    width: 15px;
+    height: 15px;
+  }
+  .main__crew .crew__h2 {
+    grid-area: role;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .main__crew .crew__h1 {
+    grid-area: name;
+    font-size: 56px;
+    margin-bottom: 27px;
+  }
+  .main__crew .crew__p {
+    grid-area: description;
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+    margin: initial;
+    text-align: left;
+    margin-bottom: 120px;
+  }
+}
 .technology {
   background-image: url("/assets/technology/background-technology-mobile.jpg");
   background-repeat: no-repeat;
