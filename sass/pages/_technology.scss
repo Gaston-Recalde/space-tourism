@@ -34,6 +34,10 @@
             width: 100%;
             height: 100%;
         }
+
+        .img-desktop{
+            display: none;
+        }
     }
 
     .technology__options{
@@ -161,6 +165,98 @@
                 line-height: 28px;
                 margin-top: 16px;
                 margin-bottom: 97px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .technology{
+        background-image: url('/assets/technology/background-technology-desktop.jpg');
+        // height: 100%;
+    }
+
+    .main{
+        margin-top: 0;
+    }
+    
+    .main__technology{
+        max-width: 100%;
+        margin-left: 166px;
+        display: grid;
+        grid-template-areas: 
+            "title title ."
+            "options data image"
+            "options data image";
+    
+        .technology__title{
+            grid-area: title;
+            text-align: left;
+            margin-left: 0;
+            font-size: 28px;
+            letter-spacing: 4.72px;
+            margin-bottom: 26px;
+            margin-top: 76px;
+    
+            span{
+                margin-right: 24px;
+            }
+        }
+    
+        .technology__img{
+            grid-area: image;
+            margin-bottom: 101px;
+
+            .img-mobile{
+                display: none;
+            }
+
+            .img-desktop{
+                display: inline-block;
+            }
+        }
+    
+        .technology__options{
+            grid-area: options;
+            margin-bottom: 0;
+            margin-top: 111px;
+    
+            ul{
+                flex-direction: column;
+                gap: 32px;
+    
+                li{
+                    letter-spacing: 2px;
+                    width: 80px;
+                    height: 80px;
+                    font-size: 32px;
+                }
+            }
+        }
+    
+        .technology__data{
+            grid-area: data;
+            width: 470px;
+            margin-left: 80px;
+            margin-right: 130px;
+            margin-top: 111px;
+            text-align: left;
+    
+            .technology__h2{
+                // font-size: 16px;
+                // letter-spacing: 2.7px;
+                margin-bottom: 11px;
+            }
+    
+            .technology__h1{
+                font-size: 56px;
+            }
+    
+            .technology__p{
+                font-size: 18px;
+                line-height: 32px;
+                margin-top: 17px;
+                margin-bottom: 0;
             }
         }
     }
