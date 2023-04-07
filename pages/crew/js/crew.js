@@ -1,3 +1,14 @@
+const persons = document.querySelectorAll('.person');
+
+persons.forEach(person => {
+  person.addEventListener('click', function() {
+    persons.forEach(person => {
+      person.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+
 const crew1 = document.getElementById('destination1');
 const crew2 = document.getElementById('destination2');
 const crew3 = document.getElementById('destination3');
