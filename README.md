@@ -14,11 +14,11 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/space-tourism.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://peppy-mousse-325b5c.netlify.app/)
 
 ## My process
 
