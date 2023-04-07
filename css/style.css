@@ -281,6 +281,9 @@ body {
   height: 100vh;
 }
 
+.main__destination {
+  text-align: center;
+}
 .main__destination h2 {
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
@@ -320,8 +323,9 @@ body {
   letter-spacing: 2.36px;
   color: hsl(231, 76%, 90%);
   padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
 }
-.main__destination .destination__options ul li:hover {
+.main__destination .destination__options ul .active {
   color: hsl(0, 0%, 100%);
   border-bottom: 3px solid hsl(0, 0%, 100%);
 }
@@ -466,6 +470,10 @@ body {
     margin-bottom: 37px;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .main__destination .destination__options ul li:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #979797;
   }
   .main__destination .main__h1 {
     grid-area: title;

@@ -20,6 +20,17 @@
 //     .catch(error => console.error(error));
 // }
 
+const travels = document.querySelectorAll('.destiny');
+
+travels.forEach(travel => {
+  travel.addEventListener('click', function() {
+    travels.forEach(travel => {
+      travel.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+
 const option1 = document.getElementById('destination1');
 const option2 = document.getElementById('destination2');
 const option3 = document.getElementById('destination3');

@@ -7,6 +7,7 @@
 }
 
 .main__destination{
+    text-align: center;
 
     h2{
         color: $white;
@@ -51,11 +52,16 @@
                 letter-spacing: 2.36px;
                 color: $sky;
                 padding-bottom: 8px;
+                border-bottom: 3px solid transparent;
 
-                &:hover{
-                    color: $white;
-                    border-bottom: 3px solid $white;
-                }
+                // .no-active{
+                //     border-bottom: 3px solid transparent;
+                // }
+
+            }
+            .active{
+                color: $white;
+                border-bottom: 3px solid $white;
             }
         }
     }
@@ -139,6 +145,14 @@
                     font-size: 16px;
                     letter-spacing: 2.7px;
                     font-family: 'Barlow Condensed', sans-serif;
+
+                    // .no-active{
+                    //     border-bottom: 3px solid transparent;
+                    // }
+    
+                    // .active{
+                    //     border-bottom: 3px solid $white;
+                    // }
                 }
             }
         }
@@ -232,6 +246,27 @@
             grid-area: options;
             margin-bottom: 37px;
             width: fit-content;
+
+            ul{
+
+                li{
+                    // border-bottom: 3px solid transparent;
+
+                    // .no-active{
+                    //     border-bottom: 3px solid transparent;
+                    // }
+    
+                    // .active{
+                    //     border-bottom: 3px solid $white;
+                    // }
+
+                    &:hover{
+                        // color: $white;
+                        cursor: pointer;
+                        border-bottom: 3px solid #979797;
+                    }
+                }
+            }
         }
     
         .main__h1{
