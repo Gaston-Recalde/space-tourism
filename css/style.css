@@ -721,6 +721,9 @@ body {
   height: 100vh;
 }
 
+.main__technology {
+  text-align: center;
+}
 .main__technology .technology__title {
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
@@ -764,17 +767,18 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid hsl(231, 76%, 90%);
+  border: 1px solid #979797;
+  color: hsl(0, 0%, 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
 }
 .main__technology .technology__options ul li:hover {
-  color: hsl(230, 35%, 7%);
-  background-color: white;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 100%);
 }
-.main__technology .technology__options ul li:active {
+.main__technology .technology__options ul .active {
   color: hsl(230, 35%, 7%);
   background-color: white;
 }

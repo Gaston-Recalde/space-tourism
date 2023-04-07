@@ -7,6 +7,7 @@
 }
 
 .main__technology{
+    text-align: center;
 
     .technology__title{
         color: $white;
@@ -56,21 +57,24 @@
                 height: 40px;
                 border-radius: 50%;
                 background-color: transparent;
-                border: 1px solid $sky;
+                border: 1px solid #979797;
+                color: $white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-size: 16px;
 
                 &:hover{
-                    color: $body-bg;
-                    background-color: white;
+                    cursor: pointer;
+                    // color: $body-bg;
+                    // color: $white;
+                    border: 1px solid $white;
                 }
 
-                &:active{
-                    color: $body-bg;
-                    background-color: white;
-                }
+            }
+            .active{
+                color: $body-bg;
+                background-color: white;
             }
         }
     }

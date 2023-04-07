@@ -1,3 +1,13 @@
+const techs = document.querySelectorAll('.tech');
+
+techs.forEach(tech => {
+  tech.addEventListener('click', function() {
+    techs.forEach(tech => {
+      tech.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
 
 // Cargar el archivo JSON
 const url = '../../data.json';
