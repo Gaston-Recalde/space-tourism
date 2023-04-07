@@ -5,21 +5,6 @@ $body-bg: hsl(230, 35, 7);
 $sky: hsl(231, 76%, 90%);
 $white: hsl(0, 0, 100);
 
-// Typography
-$heading-1: 150px;
-$heading-2: 100px;
-$heading-3: 56px;
-$heading-4: 32px;
-$heading-5: 28px;
-$space: 4.75;
-
-$sub-heading-1: 28px;
-$sub-heading-2: 17px;
-$space-sub: 2.35;
-
-$nav-text: 16px;
-$nav-space: 2.7px;
-
 @import 'general';
 @import 'main';
 @import 'pages/destination';
