@@ -160,9 +160,11 @@ body {
     justify-content: space-between;
     margin-left: 0;
     margin-top: 0;
-    padding: 39px 46px;
+    padding: 39px 46px 0 46px;
   }
   .nav__responsive .nav__ul .ul__li {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 39px;
     margin-bottom: 0;
   }
   .nav__responsive .nav__ul .ul__li a {
@@ -172,6 +174,9 @@ body {
   }
   .nav__responsive .nav__ul .ul__li a span {
     display: none;
+  }
+  .nav__responsive .nav__ul .active {
+    border-bottom: 3px solid rgb(255, 255, 255);
   }
   .main {
     margin-top: 106px;
@@ -209,10 +214,13 @@ body {
     margin-top: 40px;
   }
   .nav__responsive .nav__ul {
-    padding: 39px 0;
+    padding: 39px 0 0 0;
     width: 542px;
     margin: 0 auto;
     gap: 48px;
+  }
+  .nav__responsive .nav__ul .ul__li:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
   .nav__responsive .nav__ul .ul__li a {
     font-family: "Barlow Condensed", sans-serif;
@@ -258,6 +266,11 @@ body {
     margin-right: 165px;
     margin-top: 50px;
     grid-area: button;
+    transition: box-shadow 0.4s;
+  }
+  .main__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 88px rgba(151, 151, 151, 0.1036);
   }
 }
 .destination {
@@ -418,9 +431,6 @@ body {
   .destination {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
     height: 100%;
-  }
-  .main {
-    display: inherit;
   }
   .main__destination {
     max-width: 100%;
@@ -837,9 +847,6 @@ body {
 @media screen and (min-width: 1200px) {
   .technology {
     background-image: url("/assets/technology/background-technology-desktop.jpg");
-  }
-  .main {
-    margin-top: 0;
   }
   .main__technology {
     max-width: 100%;

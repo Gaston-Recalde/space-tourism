@@ -55,13 +55,13 @@ body{
                 font-family: 'Barlow Condensed', sans-serif;
 
                 a{
+                    color: $white;
+
                     span{
                         font-weight: 700;
                         color: $white;
                         margin-right: 12px;
                     }
-
-                    color: $white;
                 }
             }
         }
@@ -156,9 +156,11 @@ body{
                 justify-content: space-between;
                 margin-left: 0;
                 margin-top: 0;
-                padding: 39px 46px;
+                padding: 39px 46px 0 46px;
                 
                 .ul__li{
+                    border-bottom: 3px solid transparent;
+                    padding-bottom: 39px;
                     margin-bottom: 0;
     
                     a{
@@ -171,6 +173,10 @@ body{
     
                         color: $white;
                     }
+                }
+
+                .active{
+                    border-bottom: 3px solid rgb(255, 255, 255);
                 }
             }
         }
@@ -220,12 +226,16 @@ body{
         &__responsive{
     
             .nav__ul{
-                padding: 39px 0;
+                padding: 39px 0 0 0;
                 width: 542px;
                 margin: 0 auto;
                 gap: 48px;
                 
                 .ul__li{
+
+                    &:hover{
+                        border-bottom: 3px solid rgba(255, 255, 255, 50%);
+                    }
     
                     a{
                         font-family: 'Barlow Condensed', sans-serif;
@@ -284,6 +294,13 @@ body{
             margin-right: 165px;
             margin-top: 50px;
             grid-area: button;
+            transition: box-shadow .4s;
+
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0px 0px 0px 88px rgba(151, 151, 151, 10.36%);
+                // opacity: 10.36%;
+            }
         }
     }
 }
