@@ -54,10 +54,6 @@
                 padding-bottom: 8px;
                 border-bottom: 3px solid transparent;
 
-                // .no-active{
-                //     border-bottom: 3px solid transparent;
-                // }
-
             }
             .active{
                 color: $white;
@@ -145,14 +141,6 @@
                     font-size: 16px;
                     letter-spacing: 2.7px;
                     font-family: 'Barlow Condensed', sans-serif;
-
-                    // .no-active{
-                    //     border-bottom: 3px solid transparent;
-                    // }
-    
-                    // .active{
-                    //     border-bottom: 3px solid $white;
-                    // }
                 }
             }
         }
@@ -201,10 +189,6 @@
         background-image: url('/assets/destination/background-destination-desktop.jpg');
         height: 100%;
     }
-
-    // .main{
-    //     display: inherit;
-    // }
     
     .main__destination{
         max-width: 100%;
@@ -250,18 +234,8 @@
             ul{
 
                 li{
-                    // border-bottom: 3px solid transparent;
-
-                    // .no-active{
-                    //     border-bottom: 3px solid transparent;
-                    // }
-    
-                    // .active{
-                    //     border-bottom: 3px solid $white;
-                    // }
 
                     &:hover{
-                        // color: $white;
                         cursor: pointer;
                         border-bottom: 3px solid #979797;
                     }

@@ -1,7 +1,6 @@
 const navOpen = document.querySelector('.icon__open');
 const navClose = document.querySelector('.icon__close');
 const nav = document.querySelector('.nav__responsive');
-// const liElements = document.querySelectorAll('.nav__ul li');
 
 navOpen.addEventListener('click', () => {
     navOpen.style.display = 'none';
@@ -15,23 +14,11 @@ navClose.addEventListener('click', () => {
     nav.classList.remove('nav__responsive-active');
 });
 
-// liElements.forEach(li => {
-//     li.addEventListener('click', function() {
-//         liElements.forEach(li => {
-//             li.classList.remove('active');
-//         });
-//         this.classList.add('active');
-//     });
-// });
+const mybutton = document.querySelector('#button');
 
-// liElements.forEach(li => {
-//     li.addEventListener('click', () => {
-//         liElements.forEach(li => {
-//             li.classList.remove('active');
-//         });
-//         li.classList.add('active');
-//     });
-// });
+mybutton.addEventListener('click', () => {
+    window.location.href = mybutton.querySelector('a').href;
+});
 
 if(window.innerWidth > 767){
     nav.classList.remove('nav__responsive-active');

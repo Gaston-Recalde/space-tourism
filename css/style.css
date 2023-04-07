@@ -66,6 +66,8 @@ body {
   margin-top: 54px;
 }
 .nav__responsive-active .nav__ul .ul__li {
+  text-align: left;
+  width: 100%;
   margin-bottom: 32px;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -76,6 +78,9 @@ body {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   margin-right: 12px;
+}
+.nav__responsive-active .nav__ul .active {
+  border-right: 3px solid rgb(255, 255, 255);
 }
 
 .main {
@@ -111,7 +116,6 @@ body {
 .main__button {
   font-size: 20px;
   letter-spacing: 1.25px;
-  color: hsl(230, 35%, 7%);
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -120,6 +124,9 @@ body {
   text-transform: uppercase;
   font-family: "bellefair";
   margin-bottom: 48px;
+}
+.main__button a {
+  color: hsl(230, 35%, 7%);
 }
 
 @media screen and (min-width: 768px) {
@@ -163,6 +170,7 @@ body {
     padding: 39px 46px 0 46px;
   }
   .nav__responsive .nav__ul .ul__li {
+    width: auto;
     border-bottom: 3px solid transparent;
     padding-bottom: 39px;
     margin-bottom: 0;
@@ -177,6 +185,7 @@ body {
   }
   .nav__responsive .nav__ul .active {
     border-bottom: 3px solid rgb(255, 255, 255);
+    border-right: none;
   }
   .main {
     margin-top: 106px;
